@@ -1,0 +1,23 @@
+	Android	2.3	4.1.1	4.3	4.4	iOS	7.1	8.1
+range								
+displayed		×	✔	✔	✔		✔	✔
+number								
+special keyboard		✔	✔	✔	✔		✔	?
+arrow key, step		×	✔	✔	✔		?	?
+min, max, range validation		×	✔	✔	✔		✔	✔
+handling NaN		input as a number	remove after	remove	invalid		invalid	invalid
+date, time								
+special keyboard		×	×	×	✔		✔	✔
+min, max		-	✔	✔	✔		×	×
+format validation		-	✔	✔	-		-	-
+range validation		-	✔	✔	-		✔	✔
+search								
+special keyboard		✔	✔	×	✔		✔	✔
+url, email								
+special keyboard		×	×	×	✔		✔	✔
+format validation		-	✔	✔	✔		✔	✔
+validation								
+required		×	▲	▲	✔		✔	✔
+pattern		×	▲	▲	✔		✔	✔
+prevent submitting		×	×	×	✔		×	×
+show message when submit		-	-	-	✔		-	-

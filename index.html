@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>New Form Features</title>
+	<style>
+		form {
+			margin: 50px;
+		}
+		label {
+			display: block;
+		}
+		input:required {
+			border-color: red;
+		}
+		input:optional {
+			border-color: green;
+		}
+		input:invalid {
+			color: red;
+		}
+		input:valid {
+			color: green;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<a href="https://github.com/ginpei/new-form-features-support">https://github.com/ginpei/new-form-features-support</a>
+	</div>
+	<form action="?">
+		<button>Send</button>
+		<h1>Range and Number</h1>
+		<input id="range"  type="range"  min="100" max="200" step="10" value="120" />
+		<input id="number" type="number" min="100" max="200" step="10" value="120" />
+		<h1>Date and Time</h1>
+		<label>Date <input type="date" min="2000-01-01" max="2015-12-31" /></label>
+		<label>Time <input type="time" min="06:00" max="21:00" /></label>
+		<label>Search <input type="search" /></label>
+		<label>URL <input type="url" /></label>
+		<label>EMail <input type="email" /></label>
+		<h1>Validation</h1>
+		<label>Required <input type="text" required /></label>
+		<label>Optional <input type="text" /></label>
+		<label>Valid <input type="text" value="1" pattern="\d" /></label>
+		<label>Invalid <input type="text" value="x" pattern="\d" /></label>
+	</form>
+	<script>
+		document.querySelector('#range').addEventListener('change', function(event) {
+			document.querySelector('#number').value = this.value;
+		});
+		document.querySelector('#number').addEventListener('change', function(event) {
+			document.querySelector('#range').value = this.value;
+		});
+	</script>
+</body>
+</html>
+
