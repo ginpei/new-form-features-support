@@ -13,6 +13,8 @@ format validation		-	✔	✔	-		-	-
 range validation		-	✔	✔	-		✔	✔
 search								
 special keyboard		✔	✔	×	✔		✔	✔
+tel								
+special keyboard		✔	✔	✔	✔		✔	✔
 url, email								
 special keyboard		×	×	×	✔		✔	✔
 format validation		-	✔	✔	✔		✔	✔
